@@ -1,0 +1,11 @@
+Explanation
+
+1. Load the Point Cloud: The `load_point_cloud' function loads a point cloud file using Open3D.
+
+2. Segment the Floor: The segment_floor` function extracts points that are within a certain height threshold from the ground, assuming the floor is flat and at a known height.
+
+3. Project to 2D: The project_to_2d function projects the 3D floor points onto the 2D plane by ignoring the Z coordinate.
+
+4. Create Floor Plan: The create_floor_plan function creates a 2D histogram of the projected points to represent the floor plan.
+
+5. Plot Floor Plan: The plot_floor_plan function visualizes the 2D floor plan using Matplotlib.
